@@ -15,7 +15,9 @@ To write data to multiple files using ByteArrayOutputStream, demonstrating the a
 Program to implement a DATA I/O STREAM using Java
 Developed by: Santhosh U
 RegisterNumber: 212222240092
-
+/*
+```
+```
 FileOutputStream out = new FileOutputStream("F1.txt");
 FileOutputStream out2 = new FileOutputStream("F2.txt");
 ByteArrayOutputStream str = new ByteArrayOutputStream();
@@ -24,7 +26,6 @@ str.writeTo(out);
 str.writeTo(out2);
 str.close();
 System.out.println("Success...");
-*/
 ```
 
 
