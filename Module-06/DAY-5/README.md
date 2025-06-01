@@ -24,14 +24,42 @@ b.	Call the methods to get input and display results.
  ```
 /*
 Program to implement a Multiple Inheritance
-Developed by: 
-RegisterNumber:  
+Developed by: Santhosh U
+RegisterNumber:  212222240092
 */
 ```
 
 ## Sourcecode.java:
 
-
+```
+import java.util.*;
+class Number{
+    int num1=10,num2=5,result;
+    public void display(String ope){
+        System.out.println(ope+" of 2 values "+result);
+    }
+}
+class Addition extends Number{
+    public void add(){
+        result=num1+num2;
+    }
+}
+class Subtraction extends Number{
+    public void sub(){
+        result=num1-num2;
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Addition obj=new Addition();
+        obj.add();
+        obj.display("Addition");
+        Subtraction obj1=new Subtraction();
+        obj1.sub();
+        obj1.display("Subtraction");
+    }
+}
+```
 
 
 
@@ -39,7 +67,7 @@ RegisterNumber:
 
 ## OUTPUT:
 
-
+![image](https://github.com/user-attachments/assets/536d3254-968a-44b6-b7a4-6c4992a0b7cd)
 
 ## RESULT:
 
